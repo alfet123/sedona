@@ -1,0 +1,147 @@
+.main-footer {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  text-align: center;
+
+  background-color: #fff;
+}
+
+.main-footer__item {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.visitsedona {
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 6px;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+
+  font-size: 0;
+
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &__twitter {
+    background-image: url("../img/social-twitter.svg");
+    &:active {
+      background-image: url("../img/social-twitter-down.svg");
+    }
+  }
+
+  &__facebook {
+    background-image: url("../img/social-facebook.svg");
+    &:active {
+      background-image: url("../img/social-facebook-down.svg");
+    }
+  }
+
+  &__youtube {
+    background-image: url("../img/social-youtube.svg");
+    &:active {
+      background-image: url("../img/social-youtube-down.svg");
+    }
+  }
+}
+
+.designed-link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 5px;
+
+  width: 130px;
+  height: 35px;
+
+  color: #000;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+
+  background-image: url("../img/ha-logo.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 40px;
+
+  &:hover {
+    color: #669ec0;
+    background-image: url("../img/ha-logo-hvr.svg");
+  }
+
+  &:active {
+    color: #b2b2b2;
+    background-image: url("../img/ha-logo-down.svg");
+  }
+}
+
+/**************/
+/*** TABLET ***/
+/**************/
+
+@media (min-width: @screen_md) {
+
+  .main-footer {
+    padding: 35px 0;
+  }
+
+  .main-footer__item {
+    float: left;
+    margin-bottom: 0;
+    width: 256px;
+  }
+
+  .visitsedona {
+    padding-top: 14px;
+  }
+
+  .designed-link {
+    padding-top: 8px;
+  }
+
+}
+
+/***************/
+/*** DESKTOP ***/
+/***************/
+
+@media (min-width: @screen_lg) {
+
+  .main-footer__item {
+    width: 400px;
+  }
+
+}

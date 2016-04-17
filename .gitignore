@@ -1,0 +1,6 @@
+build/
+node_modules/
+Thumbs.db
+*.sublime*
+*.log
+css/*.css

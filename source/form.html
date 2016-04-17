@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona - Форма</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="inner-page">
+
+    <div class="container">
+
+      <header class="main-header">
+
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Информация</a><div class="menu-close-btn"></div></li>
+            <li class="main-menu__item"><a class="main-menu__link  main-menu__link--active" href="form.html">Оставить отзыв</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Блог шерифа</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+
+        <a class="logo" href="index.html">
+          <img class="logo-image" src="img/logo-sedona@1x.png" srcset="img/logo-sedona@2x.png 2x, img/logo-sedona@3x.png 3x" width="67" height="56" alt="Главная">
+        </a>
+
+        <div class="menu-open-btn" id="menu-open-btn"></div>
+
+      </header>
+
+
+
+      <div class="content">
+
+        <div class="intro">
+          <div class="intro__image">
+            <img class="intro__image-text  intro__image-text--sedona" src="img/text-sedona.svg" alt="Sedona">
+          </div>
+          <div class="intro__decor-1"></div>
+          <div class="intro__decor-2"></div>
+          <div class="intro__description">
+            <h1 class="intro__title">Оставьте свой отзыв</h1>
+            <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+
+        <form class="review">
+
+          <fieldset class="review__item  person">
+            <h2 class="review__title">Представьтесь, пожалуйста:</h2>
+            <div class="person__item">
+              <label class="person__label" for="person-family">Фамилия:<span class="required-mark">*</span></label>
+              <input class="person__input" type="text" name="person-family" id="person-family" placeholder="Иванов" required>
+            </div>
+            <div class="person__item">
+              <label class="person__label" for="person-name">Имя:<span class="required-mark">*</span></label>
+              <input class="person__input" type="text" name="person-name" id="person-name" placeholder="Петр" required>
+            </div>
+            <div class="person__item">
+              <label class="person__label" for="person-patronymic">Отчество:</label>
+              <input class="person__input" type="text" name="person-patronymic" id="person-patronymic" placeholder="Александрович">
+            </div>
+          </fieldset>
+
+          <fieldset class="review__item  impression">
+            <h2 class="review__title">Ваше общее впечатление:</h2>
+            <div class="impression__item  impression__item-1">
+              <input class="impression__input" type="radio" name="impression" value="positiv" id="impression-positiv" checked>
+              <label class="impression__label" for="impression-positiv">Скорее положительное</label>
+            </div>
+            <div class="impression__item">
+              <input class="impression__input" type="radio" name="impression" value="negativ" id="impression-negativ">
+              <label class="impression__label" for="impression-negativ">Скорее отрицательное</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="review__item  date">
+            <h2 class="review__title">Даты вашей поездки:</h2>
+            <div class="date__item">
+              <label class="date__label" for="date-arrival">Дата приезда:<span class="required-mark">*</span></label>
+              <input class="date__input" type="date" name="date-arrival" id="date-arrival" required>
+            </div>
+            <div class="date__item">
+              <label class="date__label" for="date-duration">Дней пребывания:<span class="required-mark">*</span></label>
+              <div class="numeric  clearfix">
+                <div class="numeric__minus" id="date-minus"></div>
+                <input class="numeric__count" type="text" name="date-duration" id="date-duration" placeholder="14" required><label>дн.</label>
+                <div class="numeric__plus" id="date-plus"></div>
+              </div>
+            </div>
+            <div class="date__item">
+              <label class="date__label" for="date-departure">Дата отъезда:<span class="required-mark">*</span></label>
+              <input class="date__input  date__input--departure" type="date" name="date-departure" id="date-departure" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="review__item  member">
+            <h2 class="review__title">Кол-во путешественников:</h2>
+            <div class="member__item">
+              <label class="member__label" for="member-amount">Количество путешественников:<span class="required-mark">*</span></label>
+              <div class="numeric  clearfix">
+                <div class="numeric__minus" id="member-minus"></div>
+                <input class="numeric__count" type="text" name="member-amount" id="member-amount" placeholder="2" required><label>чел.</label>
+                <div class="numeric__plus" id="member-plus"></div>
+              </div>
+            </div>
+
+            <table class="member__table" id="member-table">
+
+              <tr>
+                <td class="col-1">
+                  <label class="member__label" for="member-position-1">№</label>
+                  <input class="member__input" type="text" name="member-position" id="member-position-1" value="1" readonly>
+                </td>
+                <td class="col-2">
+                  <label class="member__label" for="member-family-1">Фамилия:<span class="required-mark">*</span></label>
+                  <input class="member__input" type="text" name="member-family" id="member-family-1" placeholder="Иванов" required>
+                </td>
+                <td class="col-3">
+                  <label class="member__label" for="member-name-1">Имя:<span class="required-mark">*</span></label>
+                  <input class="member__input" type="text" name="member-name" id="member-name-1" placeholder="Петр" required>
+                </td>
+                <td class="col-4">
+                  <label class="member__label" for="member-patronymic-1">Отчество:</label>
+                  <input class="member__input" type="text" name="member-patronymic" id="member-patronymic-1" placeholder="Александрович">
+                </td>
+              </tr>
+
+              <tr>
+                <td class="col-1">
+                  <label class="member__label" for="member-position-2">№</label>
+                  <input class="member__input" type="text" name="member-position" id="member-position-2" value="2" readonly>
+                </td>
+                <td class="col-2">
+                  <label class="member__label" for="member-family-2">Фамилия:<span class="required-mark">*</span></label>
+                  <input class="member__input" type="text" name="member-family" id="member-family-2" placeholder="Иванов" required>
+                </td>
+                <td class="col-3">
+                  <label class="member__label" for="member-name-2">Имя:<span class="required-mark">*</span></label>
+                  <input class="member__input" type="text" name="member-name" id="member-name-2" placeholder="Петр" required>
+                </td>
+                <td class="col-4">
+                  <label class="member__label" for="member-patronymic-2">Отчество:</label>
+                  <input class="member__input" type="text" name="member-patronymic" id="member-patronymic-2" placeholder="Александрович">
+                </td>
+              </tr>
+
+            </table>
+
+          </fieldset>
+
+          <fieldset class="review__item  sights">
+            <h2 class="review__title">Посещенные достопримечательности:</h2>
+            <div class="sights__item  sights__item--bridge">
+              <input class="sights__input" type="checkbox" name="sight-bridge" id="sight-bridge" value="bridge" checked>
+              <label class="sights__label" for="sight-bridge">Мост дьявола</label>
+            </div>
+            <div class="sights__item  sights__item--park">
+              <input class="sights__input" type="checkbox" name="sight-park" id="sight-park" value="park">
+              <label class="sights__label" for="sight-park">Слайд-парк</label>
+            </div>
+            <div class="sights__item  sights__item--bell">
+              <input class="sights__input" type="checkbox" name="sight-bell" id="sight-bell" value="bell" checked>
+              <label class="sights__label" for="sight-bell">Гора-Колокол</label>
+            </div>
+            <div class="sights__item  sights__item--rocks">
+              <input class="sights__input" type="checkbox" name="sight-rocks" id="sight-rocks" value="rocks" checked>
+              <label class="sights__label" for="sight-rocks">Красные скалы</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="review__item  photo">
+            <h2 class="review__title">Загрузите фотографии:</h2>
+            <label class="photo__select-btn" for="select-file">Выбрать фотографии</label>
+            <input class="photo__select-file" type="file" name="select-file" id="select-file" multiple>
+            <ul class="photo__list">
+              <li class="photo__item"><img class="photo__image" src="img/img-686.jpg" alt="img-686.jpg"><div class="photo__delete"></div><div class="photo__title">img-686.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-687.jpg" alt="img-687.jpg"><div class="photo__delete"></div><div class="photo__title">img-687.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-688.jpg" alt="img-688.jpg"><div class="photo__delete"></div><div class="photo__title">img-688.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-689.jpg" alt="img-689.jpg"><div class="photo__delete"></div><div class="photo__title">img-689.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-690.jpg" alt="img-690.jpg"><div class="photo__delete"></div><div class="photo__title">img-690.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-691.jpg" alt="img-691.jpg"><div class="photo__delete"></div><div class="photo__title">img-691.jpg</div></li>
+              <li class="photo__item"><img class="photo__image" src="img/img-686.jpg" alt="img-686.jpg"><div class="photo__delete"></div><div class="photo__title">img-686.jpg</div></li>
+            </ul>
+          </fieldset>
+
+          <input class="review__submit-btn" type="submit" value="Отправить отзыв">
+
+        </form>
+
+      </div>
+
+
+
+      <footer class="main-footer  clearfix">
+
+        <div class="main-footer__item">
+          <div class="visitsedona">#visitsedona</div>
+        </div>
+
+        <div class="main-footer__item">
+          <a class="social-btn  social-btn__twitter" href="#">Twitter</a>
+          <a class="social-btn  social-btn__facebook" href="#">Facebook</a>
+          <a class="social-btn  social-btn__youtube" href="#">YouTube</a>
+        </div>
+
+        <div class="main-footer__item">
+          <a class="designed-link" href="http://htmlacademy.ru">Разработано</a>
+        </div>
+
+      </footer>
+
+
+
+      <div class="popup  popup-failure">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <a class="popup__btn" href="#">OK</a>
+      </div>
+
+      <div class="popup  popup-success">
+        <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__btn-bg">
+          <a class="popup__btn" href="#">Закрыть окно</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/script.min.js"></script>
+
+  </body>
+
+</html>

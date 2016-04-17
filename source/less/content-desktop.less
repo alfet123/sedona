@@ -1,0 +1,120 @@
+/***********************/
+/*** CONTENT DESKTOP ***/
+/***********************/
+
+@media (min-width: @screen_lg) {
+
+  .intro__image {
+    width: 1200px;
+    height: 508px;
+
+    background-size: 1200px 508px;
+    background-image: url("../img/bg-lg@1x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+
+    .inner-page & {
+      height: 300px;
+      background-size: 1200px 300px;
+      background-image: url("../img/bg-inner-lg@1x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro__image {
+      background-image: url("../img/bg-lg@2x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+      .inner-page & {
+        background-image: url("../img/bg-inner-lg@2x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+      }
+    }
+  }
+
+  .intro__decor-1 {
+    display: block;
+    margin: 0;
+    margin-top: -56px;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    border-top: 56px solid transparent;
+    border-right: 600px solid #fff;
+    border-bottom: 0px solid transparent;
+    border-left: 600px solid #fff;
+  }
+
+  .intro__decor-2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: -56px;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    border-top: 56px solid transparent;
+    border-right: 350px solid #fff;
+    border-bottom: 0px solid transparent;
+    border-left: 350px solid #fff;
+  }
+
+  .intro__description {
+    .inner-page & {
+      padding-top: 100px;
+    }
+  }
+
+/**************/
+/*** REASON ***/
+/**************/
+
+  .reason {
+    width: 400px;
+  }
+
+  .reason__text {
+    width: 265px;
+  }
+
+  .reason-image {
+    width: 800px;
+    background-size: 800px 256px;
+
+    &--city {
+      background-image: url("../img/city-lg@1x.jpg");
+    }
+
+    &--bridge {
+      background-image: url("../img/bridge-lg@1x.jpg");
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .reason-image {
+      &--city {
+        background-image: url("../img/city-lg@2x.jpg");
+      }
+      &--bridge {
+        background-image: url("../img/bridge-lg@2x.jpg");
+      }
+    }
+  }
+
+/***************/
+/*** FEATURE ***/
+/***************/
+
+  .feature {
+    width: 400px;
+  }
+
+  .feature__text {
+    width: 270px;
+  }
+
+/*************/
+/***  MAP  ***/
+/*************/
+
+  .map {
+    background: url("../img/map-lg.jpg") no-repeat;
+  }
+
+}

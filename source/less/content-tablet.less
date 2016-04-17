@@ -1,0 +1,268 @@
+/**********************/
+/*** CONTENT TABLET ***/
+/**********************/
+
+@media (min-width: @screen_md) {
+
+  .intro__image {
+    width: 768px;
+    height: 512px;
+
+    background-size: 768px 512px;
+    background-image: url("../img/bg-md@1x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+
+    .inner-page & {
+      height: 290px;
+      background-size: 768px 290px;
+      background-image: url("../img/bg-inner-md@1x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro__image {
+      background-image: url("../img/bg-md@2x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+      .inner-page & {
+        background-image: url("../img/bg-inner-md@2x.jpg"), linear-gradient(to bottom, #e0f1f9 25%, #e3ac8f, #4a7a6a);
+      }
+    }
+  }
+
+  .intro__image-text {
+    &--welcome {
+      margin-bottom: 11px;
+      padding-top: 76px;
+      width: 190px;
+    }
+
+    &--tothegorgeous {
+      margin-bottom: 52px;
+      width: 256px;
+    }
+
+    &--sedona {
+      margin-bottom: 54px;
+      width: 460px;
+
+      .inner-page & {
+        margin-bottom: 0;
+        padding-top: 100px;
+        width: 460px;
+      }
+    }
+
+    &--becausecanyon {
+      width: 300px;
+    }
+  }
+
+  .intro__decor-1 {
+    display: block;
+    margin: 0;
+    margin-top: -35px;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    border-top: 35px solid transparent;
+    border-right: 384px solid #fff;
+    border-bottom: 0px solid transparent;
+    border-left: 384px solid #fff;
+  }
+
+  .intro__decor-2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: -35px;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    border-top: 35px solid transparent;
+    border-right: 225px solid #fff;
+    border-bottom: 0px solid transparent;
+    border-left: 225px solid #fff;
+  }
+
+  .intro__description {
+    padding-top: 50px;
+
+    .inner-page & {
+      padding-top: 70px;
+    }
+  }
+
+  .intro__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 21px;
+    line-height: 30px;
+
+    width: 450px;
+
+    .inner-page & {
+      font-size: 30px;
+    }
+  }
+
+  .intro__text {
+    width: 100%;
+
+    .inner-page & {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 440px;
+    }
+  }
+
+  .intro__decor-3 {
+    display: none;
+  }
+
+/**************/
+/*** REASON ***/
+/**************/
+
+  .reason-row-1 {
+    & > .reason {
+      float: left;
+    }
+    & > .reason-image {
+      float: right;
+    }
+  }
+
+  .reason-row-2 {
+    & > .reason {
+      float: right;
+    }
+    & > .reason-image {
+      float: left;
+    }
+  }
+
+  .reason-row-3 {
+    & > .reason {
+      float: left;
+    }
+  }
+
+  .reason {
+    padding: 45px 0;
+    width: 256px;
+  }
+
+  .reason__title {
+    width: 150px;
+  }
+
+  .reason__text {
+    width: 165px;
+  }
+
+  .reason-image {
+    width: 512px;
+    background-size: 512px 256px;
+
+    &--city {
+      background-image: url("../img/city-md@1x.jpg");
+    }
+
+    &--bridge {
+      background-image: url("../img/bridge-md@1x.jpg");
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .reason-image {
+      &--city {
+        background-image: url("../img/city-md@2x.jpg");
+      }
+      &--bridge {
+        background-image: url("../img/bridge-md@2x.jpg");
+      }
+    }
+  }
+
+  .delimiter {
+    display: none;
+  }
+
+/***************/
+/*** FEATURE ***/
+/***************/
+
+  .feature-row {
+    padding: 60px 0;
+  }
+
+  .feature {
+    float: left;
+
+    padding-top: 0;
+    width: 256px;
+
+    text-align: center;
+  }
+
+  .feature__image {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    width: 76px;
+    height: 76px;
+
+    &--house {
+      background-size: 76px auto;
+    }
+
+    &--food {
+      background-size: 76px auto;
+    }
+
+    &--souvenir {
+      background-size: auto 76px;
+    }
+  }
+
+  .feature__title {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .feature__text {
+    margin: 0 auto;
+    width: 165px;
+    text-align: center;
+  }
+
+/******************/
+/*** BOOK HOTEL ***/
+/******************/
+
+  .book-hotel {
+    padding-top: 50px;
+  }
+
+  .book-hotel__title {
+    font-size: 30px;
+  }
+
+  .book-hotel__text {
+    width: 440px;
+  }
+
+  .book-hotel__btn {
+    margin-bottom: 55px;
+    width: 460px;
+  }
+
+/*************/
+/***  MAP  ***/
+/*************/
+
+  .map {
+    background: url("../img/map-md.jpg") no-repeat;
+  }
+
+}

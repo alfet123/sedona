@@ -1,0 +1,171 @@
+/********************/
+/*** FORM DESKTOP ***/
+/********************/
+
+@media (min-width: @screen_lg) {
+
+/**************/
+/*** REVIEW ***/
+/**************/
+
+  .review__item {
+    width: 960px;
+
+    &:before {
+      width: 960px;
+    }
+  }
+
+/**************/
+/*** PERSON ***/
+/**************/
+
+  .person__item {
+    margin-right: 60px;
+    width: 280px;
+  }
+
+  .person__input {
+    width: 240px;
+  }
+
+/******************/
+/*** IMPRESSION ***/
+/******************/
+
+  .impression__item-1 {
+    margin-left: 140px;
+  }
+
+/************/
+/*** DATE ***/
+/************/
+
+  .date__item {
+    margin-right: 60px;
+    width: 280px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .date__input {
+    width: 240px;
+  }
+
+/***************/
+/*** NUMERIC ***/
+/***************/
+
+  .numeric {
+    margin: 0;
+    width: auto;
+  }
+
+  .numeric__minus,
+  .numeric__count {
+    margin-right: 5px;
+  }
+
+  .numeric__count {
+    padding: 15px 20px;
+    width: 110px;
+    text-align: left;
+  }
+
+  .numeric__count + label {
+    display: inline;
+  }
+
+/**************/
+/*** MEMBER ***/
+/**************/
+
+  .member__item {
+    text-align: left;
+  }
+
+  .member__table {
+
+    .col-2 {
+      width: 215px;
+
+      .member__input {
+        margin-right: 60px;
+        width: 175px;
+      }
+    }
+
+    .col-3 {
+      width: 280px;
+
+      .member__input {
+        margin-right: 60px;
+        width: 240px;
+      }
+    }
+
+    .col-4 {
+      width: 280px;
+
+      .member__input {
+        width: 240px;
+      }
+    }
+  }
+
+/**************/
+/*** SIGHTS ***/
+/**************/
+
+  .sights__item {
+    margin: 0;
+    margin-right: 50px;
+
+    &--bridge {
+      margin-left: 5px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+/*************/
+/*** PHOTO ***/
+/*************/
+
+  .photo__list {
+    margin-left: 0;
+  }
+
+  .photo__item {
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+  .photo__select-btn {
+    width: 960px;
+
+    color: #fff;
+    background-color: #81b3d2;
+
+    &:hover {
+      color: #fff;
+      background-color: #669ec0;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #81b3d2;
+    }
+
+    &:active {
+      color: #94b9d2;
+      background-color: #5496bd;
+    }
+  }
+
+}

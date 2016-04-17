@@ -1,0 +1,270 @@
+/*******************/
+/*** FORM TABLET ***/
+/*******************/
+
+@media (min-width: @screen_md) {
+
+/**************/
+/*** REVIEW ***/
+/**************/
+
+  .review__item {
+    position: relative;
+    margin: 0 auto;
+    width: 650px;
+    border-top: none;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 28px;
+      margin: 0;
+      padding: 0;
+      width: 650px;
+      height: 1px;
+      background-color: #dbdbdb;
+      z-index: 0;
+    }
+  }
+
+  .review__title {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 400px;
+    font-size: 21px;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+/**************/
+/*** PERSON ***/
+/**************/
+
+  .person {
+    margin-bottom: 30px;
+    font-size: 0;
+  }
+
+  .person__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 61px;
+    margin-bottom: 0;
+    width: 176px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .person__input {
+    width: 136px;
+    font-size: 18px;
+  }
+
+/******************/
+/*** IMPRESSION ***/
+/******************/
+
+  .impression {
+    font-size: 0;
+  }
+
+  .impression__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 130px;
+
+    font-size: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+/************/
+/*** DATE ***/
+/************/
+
+  .date {
+    margin-bottom: 30px;
+    font-size: 0;
+  }
+
+  .date__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 61px;
+    margin-bottom: 0;
+    width: 176px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .date__input {
+    width: 136px;
+    font-size: 18px;
+  }
+
+/***************/
+/*** NUMERIC ***/
+/***************/
+
+  .numeric {
+    margin: 0 auto;
+    width: 176px;
+  }
+
+  .numeric__minus,
+  .numeric__count {
+    margin-right: 0;
+  }
+
+  .numeric__count {
+    padding: 15px 5px;
+    width: 46px;
+    text-align: center;
+  }
+
+  .numeric__count + label {
+    display: none;
+  }
+
+/**************/
+/*** MEMBER ***/
+/**************/
+
+  .member__item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .member__table {
+    display: table;
+
+    border-collapse: separate;
+    border-spacing: 5px;
+
+    tbody {
+      display: table-row-group;
+    }
+
+    tr {
+      display: table-row;
+    }
+
+    td {
+      display: table-cell;
+    }
+
+    .col-2 {
+      width: 190px;
+
+      .member__input {
+        width: 150px;
+      }
+    }
+
+    .col-3 {
+      width: 190px;
+
+      .member__input {
+        width: 150px;
+      }
+    }
+
+    .col-4 {
+      width: 190px;
+
+      .member__input {
+        width: 150px;
+      }
+    }
+  }
+
+/**************/
+/*** SIGHTS ***/
+/**************/
+
+  .sights {
+    font-size: 0;
+
+    &:before {
+      top: 41px;
+    }
+  }
+
+  .sights__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 120px;
+
+    width: 200px;
+    font-size: 18px;
+
+    &--bridge, &--bell {
+      margin-left: 60px;
+    }
+
+    &--park, &--rocks {
+      margin-right: 0;
+    }
+  }
+
+/*************/
+/*** PHOTO ***/
+/*************/
+
+  .photo__list {
+    margin-left: 35px;
+  }
+
+  .photo__item {
+    margin-right: 65px;
+    margin-bottom: 65px;
+    width: 140px;
+    height: 140px;
+
+    &:nth-child(3n) {
+      margin-right: 65px;
+    }
+  }
+
+  .photo__image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .photo__delete {
+    width: 60px;
+    height: 60px;
+    left: 110px;
+    top: -30px;
+
+    background-size: 23px;
+  }
+
+  .photo__title {
+    display: block;
+    width: 140px;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .photo__select-btn {
+    margin-bottom: 80px;
+    width: 460px;
+  }
+
+  .review__submit-btn {
+    width: 460px;
+  }
+
+}
